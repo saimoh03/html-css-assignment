@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&family=Inter:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-inria-serif: "Inria Serif";
+
+  /* Colors */
+  --color-white: #fff;
+  --color-brown-200: #991b1b;
+  --color-whitesmoke-200: #f4f4f4;
+  --color-gainsboro: #b9b9b9;
+  --color-gray-100: #1f2937;
+}
+
+footer {
+  background-color: #f8eae8;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px 30px 0 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-logo img {
+  height: 50px;
+}
+
+.footer-logo p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+  text-align: left;
+  font-family: var(--font-inter);
+  width: 150px;
+}
+
+.footer-logo .zone-text {
+  color: red;
+  font-weight: bolder;
+}
+
+.newsletter p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: var(--font-inter);
+}
+
+.subscribe-box input {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-right: 5px;
+  background-color: var(--color-gainsboro);
+}
+
+.subscribe-box button {
+  padding: 8px 12px;
+  background-color: var(--color-brown-200);
+  color: var(--color-white);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3px;
+  margin-top: 20px;
+}
+.social-icons a {
+  color: var(--color-gray-100);
+  margin-right: 10px;
+  font-size: 22px;
+  text-decoration: none;
+}
+.bottom p {
+  display: none;
+}
+
+.social-icons img {
+  width: 100%;
+  height: 33px;
+}
+@media (max-width: 767px) {
+  .footer-logo {
+    display: none;
+  }
+  .newsletter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscribe-box {
+    width: 70%;
+    display: flex;
+  }
+  .subscribe-box input {
+    border-radius: 20px;
+    width: 60%;
+  }
+  .subscribe-box button {
+    width: 40%;
+    border-radius: 20px;
+  }
+  .bottom {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .bottom p {
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .zone-text {
+    color: red;
+    font-weight: bolder;
+  }
+  .social-icons {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+  }
+}
