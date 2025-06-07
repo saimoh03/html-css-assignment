@@ -10,7 +10,9 @@ To put into practice everything you’ve learned about HTML and CSS over this co
 - Stylyed the menu links in mobile view 
 - Navigation of paged Fixed
 - Image alt atribute added in all pages (6 pages)
-- Javascript implemented to make the menu functional  
+- Javascript implemented to make the menu functional
+  
+  ****************
 
 
 ## Brief
