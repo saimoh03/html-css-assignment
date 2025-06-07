@@ -7,6 +7,7 @@
     <meta name="description" content="Explore the range of jackets and outdoor apparel from Rainydays. Shop high-quality and comfortable options for all weather conditions.">
     <link rel="stylesheet" href="../css/global/header.css" />
     <link rel="stylesheet" href="../css/global/footer.css" />
+    <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../css/products.css" />
     <link rel="stylesheet" href="../css/global/variables.css" />
   </head>
@@ -14,9 +15,9 @@
   <body>
     <section class="home-page">
       <!-- Header Section -->
-      <header>
+      <!-- <header>
         <div class="header-container">
-          <div class="bars-icon"><img src="../assets/images/menu.png" alt="" /></div>
+          <div class="bars-icon"><img src="../assets/images/menu.png" alt="menu icon in product page" /></div>
           <div class="search-box">
             <input type="text" placeholder="Search" />
           </div>
@@ -31,13 +32,53 @@
               <img
                 class="cart-icon"
                 loading="lazy"
-                alt=""
+                alt="cart icon in product page"
                 src="../assets/images/shopping-cart@2x.png"
               />
             </a>
           </nav>
         </div>
-      </header>
+      </header> -->
+
+      
+  <!-- Header Section -->
+  <header>
+    <div class="header-container">
+      <div class="bars-icon" onclick="toggleMobileMenu()">
+        <img src="../assets/images/menu.png" alt="bars-icon" />
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search" />
+      </div>
+      <div class="logo">
+        <img src="../assets/images/logo.png" alt="Rainydays Logo" />
+      </div>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../pages/about-us.html">AboutUs</a>
+        <a href="../pages/contact-us.html">ContactUs</a>
+        <a href="../pages/checkout.html">
+          <img class="cart-icon" loading="lazy" alt="cart-icon" src="../assets/images/shopping-cart@2x.png" />
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" onclick="toggleMobileMenu()">&times;</button>
+    <div class="mobile-nav">
+      <a href="../index.html" onclick="toggleMobileMenu()">Home</a>
+      <a href="../pages/about-us.html" onclick="toggleMobileMenu()">About Us</a>
+      <a href="../pages/contact-us.html" onclick="toggleMobileMenu()">Contact Us</a>
+      <a href="../pages/checkout.html" onclick="toggleMobileMenu()">
+        <img class="cart-icon" loading="lazy" alt="cart-icon" src="../assets/images/shopping-cart@2x.png" />
+        Cart
+      </a>
+    </div>
+  </div>
+
+
       <section class="section">
         <div class="section-container">
           <div class="product-carousel">
@@ -47,18 +88,18 @@
                 <div class="product-info">
                   <img
                     class="favorite-icon4"
-                    alt=""
+                    alt="favorite icon in product page"
                     src="../assets/images/favorite@2x.png"
                   />
                   <div class="favorite-icons">
                     <img
                       class="rainydays-jacket1-5-icon"
-                      alt=""
+                      alt="rainidays jacket icon in product page"
                       src="../assets/images/RainyDays_Jacket1.jpeg"
                     />
                     <img
                       class="add-shopping-cart4"
-                      alt=""
+                      alt="add shopping cart icon in product page"
                       src="../assets/images/add-shopping-cart@2x.png"
                     />
                   </div>
@@ -79,18 +120,18 @@
                 <div class="product-info">
                   <img
                     class="favorite-icon4"
-                    alt=""
+                    alt="favorite icon in product page"
                     src="../assets/images/favorite@2x.png"
                   />
                   <div class="favorite-icons">
                     <img
                       class="rainydays-jacket1-5-icon"
-                      alt=""
+                      alt="rainidays jacket icon in product page"
                       src="../assets/images/RainyDays_Jacket2.jpeg"
                     />
                     <img
                       class="add-shopping-cart4"
-                      alt=""
+                      alt="Add shopping cart icon in product page"
                       src="../assets/images/add-shopping-cart@2x.png"
                     />
                   </div>
@@ -111,18 +152,18 @@
                 <div class="product-info">
                   <img
                     class="favorite-icon4"
-                    alt=""
+                    alt="favorite icon in product page"
                     src="../assets/images/favorite@2x.png"
                   />
                   <div class="favorite-icons">
                     <img
                       class="rainydays-jacket1-5-icon"
-                      alt=""
+                      alt="rainidays jacket icon in product page"
                       src="../assets/images/RainyDays_Jacket3.jpeg"
                     />
                     <img
                       class="add-shopping-cart4"
-                      alt=""
+                      alt="add shopping cart icon in product page"
                       src="../assets/images/add-shopping-cart@2x.png"
                     />
                   </div>
@@ -143,18 +184,18 @@
                 <div class="product-info">
                   <img
                     class="favorite-icon4"
-                    alt=""
+                    alt="favorite icon in product page"
                     src="../assets/images/favorite@2x.png"
                   />
                   <div class="favorite-icons">
                     <img
                       class="rainydays-jacket1-5-icon"
-                      alt=""
+                      alt="rainidays jacket icon in product page"
                       src="../assets/images/RainyDays_Jacket5.jpeg"
                     />
                     <img
                       class="add-shopping-cart4"
-                      alt=""
+                      alt="add shopping cart icon in product page"
                       src="../assets/images/add-shopping-cart@2x.png"
                     />
                   </div>
@@ -182,18 +223,18 @@
                 <div class="product-info">
                   <img
                     class="favorite-icon4"
-                    alt=""
+                    alt="favorite icon in product page"
                     src="../assets/images/favorite@2x.png"
                   />
                   <div class="favorite-icons">
                     <img
                       class="rainydays-jacket1-5-icon"
-                      alt=""
+                      alt="rainidays jacket icon in product page"
                       src="../assets/images/RainyDays_Jacket6.jpeg"
                     />
                     <img
                       class="add-shopping-cart4"
-                      alt=""
+                      alt="add shopping cart icon in product page"
                       src="../assets/images/add-shopping-cart@2x.png"
                     />
                   </div>
@@ -214,18 +255,18 @@
                 <div class="product-info">
                   <img
                     class="favorite-icon4"
-                    alt=""
+                    alt="favorite icon in product page"
                     src="../assets/images/favorite@2x.png"
                   />
                   <div class="favorite-icons">
                     <img
                       class="rainydays-jacket1-5-icon"
-                      alt=""
+                      alt="rainidays jacket icon in product page"
                       src="../assets/images/RainyDays_Jacket7.jpeg"
                     />
                     <img
                       class="add-shopping-cart4"
-                      alt=""
+                      alt="add shopping cart icon in product page"
                       src="../assets/images/add-shopping-cart@2x.png"
                     />
                   </div>
@@ -246,18 +287,18 @@
                 <div class="product-info">
                   <img
                     class="favorite-icon4"
-                    alt=""
+                    alt="favorite icon in product page"
                     src="../assets/images/favorite@2x.png"
                   />
                   <div class="favorite-icons">
                     <img
                       class="rainydays-jacket1-5-icon"
-                      alt=""
+                      alt="rainidays jacket icon in product page"
                       src="../assets/images/RainyDays_Jacket5.jpeg"
                     />
                     <img
                       class="add-shopping-cart4"
-                      alt=""
+                      alt="add shopping cart icon in product page"
                       src="../assets/images/add-shopping-cart@2x.png"
                     />
                   </div>
@@ -278,18 +319,18 @@
                 <div class="product-info">
                   <img
                     class="favorite-icon4"
-                    alt=""
+                    alt="favorite icon in product page"
                     src="../assets/images/favorite@2x.png"
                   />
                   <div class="favorite-icons">
                     <img
                       class="rainydays-jacket1-5-icon"
-                      alt=""
+                      alt="rainidays jacket icon in product page"
                       src="../assets/images/RainyDays_Jacket1.jpeg"
                     />
                     <img
                       class="add-shopping-cart4"
-                      alt=""
+                      alt="add shopping cart icon in product page"
                       src="../assets/images/add-shopping-cart@2x.png"
                     />
                   </div>
@@ -319,18 +360,18 @@
                 <div class="product-info">
                   <img
                     class="favorite-icon4"
-                    alt=""
+                    alt="favorite-icon4 in product page"
                     src="../assets/images/favorite@2x.png"
                   />
                   <div class="favorite-icons">
                     <img
                       class="rainydays-jacket1-5-icon"
-                      alt=""
+                      alt="rainidays jacket icon in product page"
                       src="../assets/images/RainyDays_Jacket3.jpeg"
                     />
                     <img
                       class="add-shopping-cart4"
-                      alt=""
+                      alt="add shopping cart icon in product page"
                       src="../assets/images/add-shopping-cart@2x.png"
                     />
                   </div>
@@ -351,18 +392,18 @@
                 <div class="product-info">
                   <img
                     class="favorite-icon4"
-                    alt=""
+                    alt="favorite icon in product page"
                     src="../assets/images/favorite@2x.png"
                   />
                   <div class="favorite-icons">
                     <img
                       class="rainydays-jacket1-5-icon"
-                      alt=""
+                      alt="rainidays jacket icon in product page"
                       src="../assets/images/RainyDays_Jacket5.jpeg"
                     />
                     <img
                       class="add-shopping-cart4"
-                      alt=""
+                      alt="add shopping cart icon in product page"
                       src="../assets/images/add-shopping-cart@2x.png"
                     />
                   </div>
@@ -383,18 +424,18 @@
                 <div class="product-info">
                   <img
                     class="favorite-icon4"
-                    alt=""
+                    alt="favorite-icon4 in product page"
                     src="../assets/images/favorite@2x.png"
                   />
                   <div class="favorite-icons">
                     <img
                       class="rainydays-jacket1-5-icon"
-                      alt=""
+                      alt="rainidays jacket icon in product page"
                       src="../assets/images/RainyDays_Jacket6.jpeg"
                     />
                     <img
                       class="add-shopping-cart4"
-                      alt=""
+                      alt="add shopping cart icon in product page"
                       src="../assets/images/add-shopping-cart@2x.png"
                     />
                   </div>
@@ -415,18 +456,18 @@
                 <div class="product-info">
                   <img
                     class="favorite-icon4"
-                    alt=""
+                    alt="favorite-icon4 in product page"
                     src="../assets/images/favorite@2x.png"
                   />
                   <div class="favorite-icons">
                     <img
                       class="rainydays-jacket1-5-icon"
-                      alt=""
+                      alt="rainidays jacket icon in product page"
                       src="../assets/images/RainyDays_Jacket7.jpeg"
                     />
                     <img
                       class="add-shopping-cart4"
-                      alt=""
+                      alt="add shopping cart icon in product page"
                       src="../assets/images/add-shopping-cart@2x.png"
                     />
                   </div>
@@ -485,5 +526,11 @@
         </div>
       </div>
     </footer>
+    <script>
+      function toggleMobileMenu() {
+          const mobileMenu = document.getElementById('mobileMenu');
+          mobileMenu.classList.toggle('active');
+      }
+  </script>
   </body>
 </html>

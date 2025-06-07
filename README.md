@@ -3,6 +3,16 @@
 ## Goal
 To put into practice everything you’ve learned about HTML and CSS over this course by bringing your design alive.
 
+## Changes during portfolio
+- Fixed in hero section the button overlayered on text in mobile screen
+- Fixed Product Item title and icon position in mobile screen 
+- Made the menu button functional in the header of each page (6 pages)
+- Stylyed the menu links in mobile view 
+- Navigation of paged Fixed
+- Image alt atribute added in all pages (6 pages)
+- Javascript implemented to make the menu functional  
+
+
 ## Brief
 
 - You must deliver a properly functioning, responsive website for the assignment brief you chose in Design 1.

@@ -11,30 +11,44 @@
         <link rel="stylesheet" href="../css/checkout.css" />
       </head>
   <body>
-    <header>
-      <div class="header-container">
-        <div class="bars-icon"><img src="../assets/images/menu.png" alt="" /></div>
-        <div class="search-box">
-          <input type="text" placeholder="Search" />
-        </div>
-        <div class="logo">
-          <img src="../assets/images/logo.png" alt="Rainydays Logo" />
-        </div>
-        <nav>
-          <a href="../index.html">Home</a>
-          <a href="./about-us.html">AboutUs</a>
-          <a href="./contact-us.html">ContactUs</a>
-          <a href="./checkout.html">
-            <img
-              class="cart-icon"
-              loading="lazy"
-              alt=""
-              src="../assets/images/shopping-cart@2x.png"
-            />
-          </a>
-        </nav>
+
+  <!-- Header Section -->
+  <header>
+    <div class="header-container">
+      <div class="bars-icon" onclick="toggleMobileMenu()">
+        <img src="../assets/images/menu.png" alt="bars-icon" />
       </div>
-    </header>
+      <div class="search-box">
+        <input type="text" placeholder="Search" />
+      </div>
+      <div class="logo">
+        <img src="../assets/images/logo.png" alt="Rainydays Logo" />
+      </div>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../pages/about-us.html">AboutUs</a>
+        <a href="../pages/contact-us.html">ContactUs</a>
+        <a href="../pages/checkout.html">
+          <img class="cart-icon" loading="lazy" alt="cart-icon" src="../assets/images/shopping-cart@2x.png" />
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" onclick="toggleMobileMenu()">&times;</button>
+    <div class="mobile-nav">
+      <a href="../index.html" onclick="toggleMobileMenu()">Home</a>
+      <a href="../pages/about-us.html" onclick="toggleMobileMenu()">About Us</a>
+      <a href="../pages/contact-us.html" onclick="toggleMobileMenu()">Contact Us</a>
+      <a href="../pages/checkout.html" onclick="toggleMobileMenu()">
+        <img class="cart-icon" loading="lazy" alt="cart-icon" src="../assets/images/shopping-cart@2x.png" />
+        Cart
+      </a>
+    </div>
+  </div>
+
     <main>
       <div class="cart">
         <div class="cart-title">
@@ -46,16 +60,16 @@
               <img
                 class="icons"
                 src="../assets/images/RainyDays_Jacket1.jpeg"
-                alt=""
+                alt="item icon in checkout page"
               />
             </div>
             <div class="details">
               <h1 class="title">Cotton Jacket</h1>
               <h1 class="type">NOK 309</h1>
               <div class="counter">
-                <img class="icons" src="../assets/images/minus@2x.png" alt="" />
+                <img class="icons" src="../assets/images/minus@2x.png" alt="minus icon" />
                 <span>2</span>
-                <img class="icons" src="../assets/images/plus@2x.png" alt="" />
+                <img class="icons" src="../assets/images/plus@2x.png" alt="plus icon" />
               </div>
             </div>
           </div>
@@ -64,16 +78,16 @@
               <img
                 class="icons"
                 src="../assets/images/RainyDays_Jacket2.jpeg"
-                alt=""
+                alt="tem icon in checkout "
               />
             </div>
             <div class="details">
               <h1 class="title">Cotton Jacket</h1>
               <h1 class="type">NOK 309</h1>
               <div class="counter">
-                <img class="icons" src="../assets/images/minus@2x.png" alt="" />
+                <img class="icons" src="../assets/images/minus@2x.png" alt="minus icon" />
                 <span>2</span>
-                <img class="icons" src="../assets/images/plus@2x.png" alt="" />
+                <img class="icons" src="../assets/images/plus@2x.png" alt="plus icon" />
               </div>
             </div>
           </div>
@@ -81,7 +95,7 @@
       </div>
       <div class="checkout">
         <div class="checkout-title">
-            <img class="icons" src="../assets/u-turn-to-left@2x.png" alt="" />
+            <img class="icons" src="../assets/u-turn-to-left@2x.png" alt="turn left icon" />
             <h1 class="title">Checkout</h1>
   
         </div>
@@ -151,5 +165,11 @@
         </div>
       </div>
     </footer>
+    <script>
+      function toggleMobileMenu() {
+          const mobileMenu = document.getElementById('mobileMenu');
+          mobileMenu.classList.toggle('active');
+      }
+  </script>
   </body>
 </html>

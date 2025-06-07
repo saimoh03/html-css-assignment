@@ -11,10 +11,13 @@
     <link rel="stylesheet" href="../css/contact-us.css" />
   </head>
   <body>
-   <!-- Header Section -->
-   <header>
+
+  <!-- Header Section -->
+  <header>
     <div class="header-container">
-      <div class="bars-icon"><img src="../assets/images/menu.png" alt="" /></div>
+      <div class="bars-icon" onclick="toggleMobileMenu()">
+        <img src="../assets/images/menu.png" alt="bars-icon" />
+      </div>
       <div class="search-box">
         <input type="text" placeholder="Search" />
       </div>
@@ -23,20 +26,31 @@
       </div>
       <nav>
         <a href="../index.html">Home</a>
-        <a href="./about-us.html">AboutUs</a>
-        <a href="./contact-us.html">ContactUs</a>
-        <a href="./checkout.html">
-          <img
-            class="cart-icon"
-            loading="lazy"
-            alt=""
-            src="../assets/images/shopping-cart@2x.png"
-          />
+        <a href="../pages/about-us.html">AboutUs</a>
+        <a href="../pages/contact-us.html">ContactUs</a>
+        <a href="../pages/checkout.html">
+          <img class="cart-icon" loading="lazy" alt="cart-icon" src="../assets/images/shopping-cart@2x.png" />
         </a>
       </nav>
     </div>
   </header>
-    <!-- Main Contact Us Section -->
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" onclick="toggleMobileMenu()">&times;</button>
+    <div class="mobile-nav">
+      <a href="../index.html" onclick="toggleMobileMenu()">Home</a>
+      <a href="../pages/about-us.html" onclick="toggleMobileMenu()">About Us</a>
+      <a href="../pages/contact-us.html" onclick="toggleMobileMenu()">Contact Us</a>
+      <a href="../pages/checkout.html" onclick="toggleMobileMenu()">
+        <img class="cart-icon" loading="lazy" alt="cart-icon" src="../assets/images/shopping-cart@2x.png" />
+        Cart
+      </a>
+    </div>
+  </div>
+
+  
+  <!-- Main Contact Us Section -->
     <main>
       <section class="contact-us">
         <div class="contact-info">
@@ -50,11 +64,11 @@
             London
           </p>
           <p>
-            <img class="icons" src="../assets/images/phone@2x.png" alt="" />
+            <img class="icons" src="../assets/images/phone@2x.png" alt="phone icon" />
             +447745315897
           </p>
           <p>
-            <img class="icons" src="../assets/images/email@2x.png" alt="" />
+            <img class="icons" src="../assets/images/email@2x.png" alt="email icon" />
             example@gmail.com
           </p>
         </div>
@@ -110,5 +124,11 @@
         </div>
       </div>
     </footer>
+    <script>
+      function toggleMobileMenu() {
+          const mobileMenu = document.getElementById('mobileMenu');
+          mobileMenu.classList.toggle('active');
+      }
+  </script>
   </body>
 </html>

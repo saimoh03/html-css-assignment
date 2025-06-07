@@ -1,105 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us - Rainydays</title>
-    <meta name="description" content="Learn about Rainydays, our mission, and our commitment to quality and comfort. Discover why Rainydays is the best choice for jackets and outdoor apparel.">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/global/header.css" />
-    <link rel="stylesheet" href="../css/global/footer.css" />
-    <link rel="stylesheet" href="../css/about-us.css" />
-  </head>
-  <body>
-    <header>
-      <div class="header-container">
-        <div class="bars-icon"><img src="../assets/images/menu.png" alt="" /></div>
-        <div class="search-box">
-          <input type="text" placeholder="Search" />
-        </div>
-        <div class="logo">
-          <img src="../assets/images/logo.png" alt="Rainydays Logo" />
-        </div>
-        <nav>
-          <a href="../index.html">Home</a>
-          <a href="./about-us.html">AboutUs</a>
-          <a href="./contact-us.html">ContactUs</a>
-          <a href="./checkout.html">
-            <img
-              class="cart-icon"
-              loading="lazy"
-              alt=""
-              src="../assets/images/shopping-cart@2x.png"
-            />
-          </a>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Rainydays</title>
+  <meta name="description"
+    content="Learn about Rainydays, our mission, and our commitment to quality and comfort. Discover why Rainydays is the best choice for jackets and outdoor apparel.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&family=Inter:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/global/header.css" />
+  <link rel="stylesheet" href="../css/global/footer.css" />
+  <link rel="stylesheet" href="../css/about-us.css" />
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="header-container">
+      <div class="bars-icon" onclick="toggleMobileMenu()">
+        <img src="../assets/images/menu.png" alt="bars-icon" />
       </div>
-    </header>
-    <main>
-      <section class="about-us">
-        <div class="logo-large">
-          <img src="../assets/images/logo.png" alt="Rainydays Logo Large" />
-        </div>
-        <div class="about-text">
-          <h1>ABOUT US</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-      </section>
-    </main>
+      <div class="search-box">
+        <input type="text" placeholder="Search" />
+      </div>
+      <div class="logo">
+        <img src="../assets/images/logo.png" alt="Rainydays Logo" />
+      </div>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../pages/about-us.html">AboutUs</a>
+        <a href="../pages/contact-us.html">ContactUs</a>
+        <a href="../pages/checkout.html">
+          <img class="cart-icon" loading="lazy" alt="cart-icon" src="../assets/images/shopping-cart@2x.png" />
+        </a>
+      </nav>
+    </div>
+  </header>
 
-    <footer>
-      <div class="footer-container">
-        <div class="footer-logo">
-          <img src="../assets/images/logo.png" alt="Rainydays Logo" />
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" onclick="toggleMobileMenu()">&times;</button>
+    <div class="mobile-nav">
+      <a href="../index.html" onclick="toggleMobileMenu()">Home</a>
+      <a href="../pages/about-us.html" onclick="toggleMobileMenu()">About Us</a>
+      <a href="../pages/contact-us.html" onclick="toggleMobileMenu()">Contact Us</a>
+      <a href="../pages/checkout.html" onclick="toggleMobileMenu()">
+        <img class="cart-icon" loading="lazy" alt="cart-icon" src="../assets/images/shopping-cart@2x.png" />
+        Cart
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <section class="about-us">
+      <div class="logo-large">
+        <img src="../assets/images/logo.png" alt="Rainydays Logo Large" />
+      </div>
+      <div class="about-text">
+        <h1>ABOUT US</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="../assets/images/logo.png" alt="Rainydays Logo" />
+        <p>
+          Pushing the Comfort
+          <span class="zone-text">ZONE</span>
+        </p>
+      </div>
+      <div class="newsletter">
+        <p>Subscribe To Our Newsletter</p>
+        <div class="subscribe-box">
+          <input type="email" placeholder="Email" />
+          <button type="submit">SUBMIT</button>
+        </div>
+        <div class="bottom">
           <p>
             Pushing the Comfort
             <span class="zone-text">ZONE</span>
           </p>
-        </div>
-        <div class="newsletter">
-          <p>Subscribe To Our Newsletter</p>
-          <div class="subscribe-box">
-            <input type="email" placeholder="Email" />
-            <button type="submit">SUBMIT</button>
-          </div>
-          <div class="bottom">
-            <p>
-              Pushing the Comfort
-              <span class="zone-text">ZONE</span>
-            </p>
-            <div class="social-icons">
-              <a href="#"
-                ><img src="../assets/images/facebook@2x.png" alt="Facebook"
-              /></a>
-              <a href="#"
-                ><img src="../assets/images/whatsapp@2x.png" alt="whatsapp"
-              /></a>
-              <a href="#"
-                ><img src="../assets/images/twitterx@2x.png" alt="X-twitter"
-              /></a>
-              <a href="#"
-                ><img src="../assets/images/gmail-logo@2x.png" alt="Gmail"
-              /></a>
-            </div>
+          <div class="social-icons">
+            <a href="#"><img src="../assets/images/facebook@2x.png" alt="Facebook" /></a>
+            <a href="#"><img src="../assets/images/whatsapp@2x.png" alt="whatsapp" /></a>
+            <a href="#"><img src="../assets/images/twitterx@2x.png" alt="X-twitter" /></a>
+            <a href="#"><img src="../assets/images/gmail-logo@2x.png" alt="Gmail" /></a>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+  <script>
+    function toggleMobileMenu() {
+      const mobileMenu = document.getElementById('mobileMenu');
+      mobileMenu.classList.toggle('active');
+    }
+  </script>
+</body>
+
 </html>
